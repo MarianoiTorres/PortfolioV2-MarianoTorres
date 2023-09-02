@@ -1,0 +1,44 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #181333, #020105);
+
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 0; 
+}
+
+.containerInfo {
+    box-sizing: border-box;
+    padding: 50px;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    z-index: 0;
+}
+
+.containerInfo p {
+    margin: 0;
+    font-size: 70px;
+    letter-spacing: 3px;
+    color: white;
+    z-index: 1;
+    font-weight: 600;
+}
+
+.hola {
+    width: 320px;
+  height: 160px;
+}
