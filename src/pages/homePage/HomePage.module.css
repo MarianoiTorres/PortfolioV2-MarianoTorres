@@ -6,6 +6,7 @@
     background: linear-gradient(to right, #181333, #020105);
     display: flex;
     flex: 1;
+    flex-direction: column;
 }
 
 .container::before {

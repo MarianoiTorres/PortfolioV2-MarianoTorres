@@ -2,6 +2,7 @@ import { motion,  } from "framer-motion"
 import style from './HomePage.module.css'
 import Welcome from "../../components/Welcome/Welcome"
 import Nav from "../../components/navBar/Nav"
+import About from "../../components/about/About"
 
 const HomePage = () => {
     return (
@@ -15,6 +16,9 @@ const HomePage = () => {
             <Nav />
             <motion.div>
                 <Welcome />
+            </motion.div>
+            <motion.div>
+                <About />
             </motion.div>
         </motion.div>
     )
