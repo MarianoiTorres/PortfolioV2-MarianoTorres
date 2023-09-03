@@ -3,9 +3,12 @@ import Particle from '../../components/particles/particle'
 import style from './landingPage.module.css'
 import { useEffect, useState } from "react"
 import { FiArrowRight } from "react-icons/fi";
+import { useNavigate } from "react-router-dom";
 
 
 const LandingPage = () => {
+
+    const navigate = useNavigate()
 
     const [visible, setVisible] = useState(false)
 
@@ -17,11 +20,16 @@ const LandingPage = () => {
         return () => clearTimeout(timeoutId);
     }, [])
 
+    const redirectPage = () => {
+        navigate('/home')
+    }
+
     return (
         <motion.div
             className={style.container}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
             transition={{ type: "tween", ease: 'easeIn', duration: 0.5 }}
         >
             <Particle />
@@ -92,6 +100,7 @@ const LandingPage = () => {
                     initial={{ x: 0 }}
                     animate={{ x: [0, 20, 0] }}
                     transition={{ duration: 2, repeat: Infinity, repeatType: 'reverse' }}
+                    onClick={redirectPage}
                 >
                     <FiArrowRight className={style.iconNext} />
                 </motion.div>

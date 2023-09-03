@@ -1,0 +1,66 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    box-sizing: border-box;
+}
+
+p, h1, h2 {
+    margin: 0;
+}
+
+.containerTitle {
+    height: 100%;
+    width: 50%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    padding-left: 10%;
+    box-sizing: border-box;
+}
+
+.html {
+
+}
+
+.body {
+    padding-left: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 55px;
+    margin: 5px;
+    z-index: 1;
+    user-select: none;
+  
+    text-shadow: 2px 1px 5px black;
+}
+
+h2 {
+    color: white;
+    padding-left: 3px;
+}
+
+.containerMotiondiv {
+    width: 500px;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+
+.containerImage img {
+    width: 350px;
+    height: fit-content;
+    
+}
