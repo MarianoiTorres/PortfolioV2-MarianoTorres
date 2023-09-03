@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@mojs/core": "^1.6.0",
+    "aos": "^2.3.4",
     "atropos": "^2.0.2",
     "framer-motion": "^10.16.2",
     "react": "^18.2.0",

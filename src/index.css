@@ -2,6 +2,12 @@
   font-family: 'font1';
   src: url('./assets/fonts/font1.ttf');
 }
+
+@font-face {
+  font-family: 'font3';
+  src: url('./assets/fonts/Yellowtail-Regular.ttf');
+}
+
 :root {
   font-family: 'font1';
   line-height: 1.5;
