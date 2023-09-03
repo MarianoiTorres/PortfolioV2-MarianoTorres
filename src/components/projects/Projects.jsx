@@ -1,5 +1,7 @@
 import style from './Projects.module.css'
 import { motion, } from "framer-motion"
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import { BiLinkExternal } from 'react-icons/bi';
 
 const Projects = () => {
     return (
@@ -31,10 +33,36 @@ const Projects = () => {
                         </div>
                         <motion.div className={style.projectInfo} data-aos="fade-right">Aplicacion para la gestión de proyectos y tareas. Permite crear tableros con listas y tarjetas que representan tareas. Puedes mover tarjetas entre listas. Incluye funciones de colaboración en tiempo real y asignación de tareas</motion.div>
                     </motion.div>
-                    <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1693277282/1_udblnq.png' data-aos="fade-left"></motion.img>
+                    <div className={style.containerImage} data-aos="fade-left">
+                        <div className={style.linksDiv}>
+                            <div className={style.button}>
+                                <AiFillGithub className={style.icon} />
+                            </div>
+                            <div className={style.button}>
+                                <AiFillLinkedin className={style.icon} />
+                            </div>
+                            <div className={style.button}>
+                                <BiLinkExternal className={style.icon} />
+                            </div>
+                        </div>
+                        <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1693277282/1_udblnq.png'></motion.img>
+                    </div>
                 </motion.div>
                 <motion.div className={style.projectsDiv}>
-                    <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1684008128/Captura_xfpyjd.png' data-aos="fade-right"></motion.img>
+                    <div className={style.containerImage} data-aos="fade-right">
+                        <div className={style.linksDivReverse}>
+                            <div className={style.button}>
+                                <AiFillGithub className={style.icon} />
+                            </div>
+                            <div className={style.button}>
+                                <AiFillLinkedin className={style.icon} />
+                            </div>
+                            <div className={style.button}>
+                                <BiLinkExternal className={style.icon} />
+                            </div>
+                        </div>
+                        <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1684008128/Captura_xfpyjd.png' ></motion.img>
+                    </div>
                     <motion.div className={style.projectTitleReverse}>
                         <div className={style.titleProject} data-aos="fade-left"><b>Proyecto Grupal</b><p>The Chocolate Hub</p></div>
                         <div className={style.infoReverse} data-aos="fade-left">
@@ -58,11 +86,37 @@ const Projects = () => {
                             <p>CSS</p>
                         </div>
                     </motion.div>
-                    <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1684008036/Captura_ktt5bg.png' data-aos="fade-left"></motion.img>
+                    <div className={style.containerImage} data-aos="fade-left">
+                    <div className={style.linksDiv}>
+                            <div className={style.button}>
+                                <AiFillGithub className={style.icon} />
+                            </div>
+                            <div className={style.button}>
+                                <AiFillLinkedin className={style.icon} />
+                            </div>
+                            <div className={style.button}>
+                                <BiLinkExternal className={style.icon} />
+                            </div>
+                        </div>
+                        <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1684008036/Captura_ktt5bg.png' ></motion.img>
+                    </div>
                     <motion.div className={style.projectInfo} data-aos="fade-right">Single-page application que consume información sobre videojuegos de la API RAWG, cuenta con las siguiente funcionalidades: -Paginado -Filtrar por género/origen -Ordenar por rating/alfabéticamente-Buscar juegos -Crear un juego</motion.div>
                 </motion.div>
                 <motion.div className={style.projectsDiv}>
-                    <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1693775336/2_knx7vp.png' data-aos="fade-right"></motion.img>
+                    <div className={style.containerImage} data-aos="fade-right">
+                        <div className={style.linksDivReverse}>
+                            <div className={style.button}>
+                                <AiFillGithub className={style.icon} />
+                            </div>
+                            <div className={style.button}>
+                                <AiFillLinkedin className={style.icon} />
+                            </div>
+                            <div className={style.button}>
+                                <BiLinkExternal className={style.icon} />
+                            </div>
+                        </div>
+                        <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1693775336/2_knx7vp.png' ></motion.img>
+                    </div>
                     <motion.div className={style.projectTitleReverse}>
                         <div className={style.titleProject} data-aos="fade-left"><b>Proyecto Personal</b><p>Mi Portfolio :D</p></div>
                         <div className={style.infoReverse} data-aos="fade-left">
