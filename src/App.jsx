@@ -13,9 +13,7 @@ function App() {
         <Routes>
           <Route path='' element={<Intro />} />
           <Route path='/landing' element={<LandingPage />} />
-
           <Route path='/home' element={<HomePage />} />
-
         </Routes>
       </BrowserRouter>
     </>

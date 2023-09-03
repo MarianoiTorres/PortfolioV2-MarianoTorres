@@ -3,6 +3,8 @@ import style from './HomePage.module.css'
 import Welcome from "../../components/Welcome/Welcome"
 import Nav from "../../components/navBar/Nav"
 import About from "../../components/about/About"
+import Skills from "../../components/skills/Skills"
+import Projects from "../../components/projects/Projects"
 
 const HomePage = () => {
     return (
@@ -19,6 +21,12 @@ const HomePage = () => {
             </motion.div>
             <motion.div>
                 <About />
+            </motion.div>
+            <motion.div>
+                <Skills />
+            </motion.div>
+            <motion.div>
+                <Projects />
             </motion.div>
         </motion.div>
     )

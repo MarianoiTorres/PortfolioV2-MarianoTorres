@@ -4,7 +4,7 @@ import style from './Welcome.module.css'
 
 const Welcome = () => {
     return (
-        <motion.div className={style.container}>
+        <motion.div className={style.container} id="home">
             <Particle />
             <motion.div className={style.containerTitle}>
                 <p className={style.html}>{"<html>"}</p>

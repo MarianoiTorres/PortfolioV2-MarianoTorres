@@ -47,9 +47,9 @@ const Nav = () => {
                     }
                 }
             >
-                <a href="">Inicio</a>
-                <a href="">Sobre Mi</a>
-                <a href="">Skills</a>
+                <a href="#home">Inicio</a>
+                <a href="#about">Sobre Mi</a>
+                <a href="#skills">Skills</a>
                 <a href="">Proyectos</a>
                 <a href="">Educacion</a>
                 <a href="">Contacto</a>
