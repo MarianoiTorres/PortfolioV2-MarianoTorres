@@ -50,7 +50,7 @@ const Nav = () => {
                 <a href="#home">Inicio</a>
                 <a href="#about">Sobre Mi</a>
                 <a href="#skills">Skills</a>
-                <a href="">Proyectos</a>
+                <a href="#projects">Proyectos</a>
                 <a href="">Educacion</a>
                 <a href="">Contacto</a>
             </motion.div>

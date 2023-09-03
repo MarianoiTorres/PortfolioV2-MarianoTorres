@@ -3,13 +3,16 @@
 
     position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
     background: none;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background: linear-gradient(to right , #181333, #020105);
+    gap: 20px;
+    padding-bottom: 50px;
 }
 
 .container::before {
@@ -24,7 +27,6 @@
 }
 
 .title {
-    
     width: 100%;
     height: 12%;
     display: flex;
@@ -53,4 +55,150 @@
     letter-spacing: 5px;
     font-family: 'font3';
     z-index: 1;
+}
+
+.containerProjects {
+    width: 100%;
+    min-height: 88%;
+    height: fit-content;
+    display: flex;
+    justify-content: top;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.projectsDiv {
+    width: 850px;
+    height: 200px;
+    display: flex;
+    justify-content:space-between;
+    position: relative;
+}
+
+.projectsDiv img{
+    width: 50%;
+    height: fit-content;
+    max-height: 100%;
+    position: relative;
+    z-index: 0;
+    border-radius: 5px;
+}
+
+.projectTitle {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.projectTitleReverse {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    z-index: 1;
+    position: relative;
+}
+
+.titleProject {
+    height: 70%;
+}
+
+.info {
+    height: 30%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 12px;
+}
+
+.info p {
+    border: 1px solid white;
+    padding: 2px;
+    height: 20px;
+    width: 65px;
+    font-size: 12px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info p:hover {
+    cursor: pointer;
+    border: 1px solid rgb(141, 116, 250);
+    color: rgb(141, 116, 250);
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    transition: 0.2s ease;
+}
+
+.infoReverse {
+    height: 30%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 12px;
+}
+
+.infoReverse p {
+    border: 1px solid white;
+    padding: 2px;
+    height: 20px;
+    width: 65px;
+    font-size: 12px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoReverse p:hover {
+    cursor: pointer;
+    border: 1px solid rgb(141, 116, 250);
+    color: rgb(141, 116, 250);
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    transition: 0.2s ease;
+}
+
+.projectInfo {
+    top: 30%;
+    height: 80px;
+    width: 55%;
+    background: linear-gradient(
+        195deg,
+        rgba(255,255,255,0.1),
+        rgba(255,255,255,0.1)
+    );
+    backdrop-filter: blur(151px);
+    -webkit-backdrop-filter: blur(151px);
+    padding: 2px;
+    padding-left: 5px;
+    border-radius: 5px;
+    position: absolute;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.projectInfoReverse {
+    top: 30%;
+    right: 0;
+    height: 80px;
+    width: 55%;
+    background: linear-gradient(
+        195deg,
+        rgba(255,255,255,0.1),
+        rgba(255,255,255,0.1)
+    );
+    backdrop-filter: blur(151px);
+    -webkit-backdrop-filter: blur(151px);
+    padding: 2px;
+    padding-left: 5px;
+    border-radius: 5px;
+    position: absolute;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-align: left;
 }
