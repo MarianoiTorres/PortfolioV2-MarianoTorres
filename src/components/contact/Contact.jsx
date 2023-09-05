@@ -2,12 +2,16 @@ import style from './Contact.module.css'
 import { motion, } from "framer-motion"
 import emailjs from 'emailjs-com';
 import { useState } from 'react';
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Modal from '@mui/material/Modal';
 const Contact = () => {
 
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    const [open, setOpen] = React.useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
 
     const submitHandler = (event) => {
         event.preventDefault()
@@ -19,9 +23,9 @@ const Contact = () => {
                 event.target,
                 "GQSlXjKIa8g38Q47P"
             )
-        //.then((res) => {
-        //    handleShow()
-        //});
+        .then((res) => {
+            handleOpen()
+        });
     }
 
     return (
@@ -42,6 +46,7 @@ const Contact = () => {
             </div>
             <div className={style.containerForm}>
                 <div className={style.secondContainerForm} >
+                    
                     <form onSubmit={submitHandler} data-aos="fade-up">
                         <p>¡Contactame!</p>
                         <input autocomplete="off" placeholder='Nombre' type="text" name="name" required />
@@ -56,6 +61,24 @@ const Contact = () => {
                     </form>
                 </div>
             </div>
+            <Modal
+                open={open}
+                onClose={handleClose}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+                className={style.containerModal}
+            >
+                <Box sx={style} className={style.modal}>
+                    <Typography id="modal-modal-title" variant="h8" component="h2">
+                    ¡Gracias por tu propuesta!
+                    </Typography>
+                    <Typography id="modal-modal-description" sx={{ mt: 1 }} className={style.p}>
+                    Tu propuesta ha sido recibida. 
+                    <br />
+                    Evaluaré tu propuesta y te proporcionaré una respuesta pronto.
+                    </Typography>
+                </Box>
+            </Modal>
         </div>
     )
 }
