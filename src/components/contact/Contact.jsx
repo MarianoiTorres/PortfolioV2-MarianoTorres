@@ -68,7 +68,7 @@ const Contact = () => {
                 aria-describedby="modal-modal-description"
                 className={style.containerModal}
             >
-                <Box sx={style} className={style.modal}>
+                <Box sx={style} className={style.modal}                >
                     <Typography id="modal-modal-title" variant="h8" component="h2">
                     ¡Gracias por tu propuesta!
                     </Typography>
