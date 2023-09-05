@@ -8,7 +8,9 @@
   src: url('./assets/fonts/Yellowtail-Regular.ttf');
 }
 
+
 :root {
+  
   font-family: 'font1';
   line-height: 1.5;
   font-weight: 400;
@@ -39,6 +41,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  
 }
 
 h1 {

@@ -33,7 +33,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 
@@ -67,6 +67,7 @@
     flex-direction: column;
     align-items: center;
     gap: 55px;
+    padding-bottom: 60px;
 }
 
 .projectsDiv {
@@ -75,6 +76,7 @@
     display: flex;
     justify-content:space-between;
     position: relative;
+    
 }
 
 .projectsDiv img{
@@ -146,11 +148,14 @@
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    color: white;
 }
 
 .button:hover {
     background-color: rgb(141, 116, 250);
     cursor: pointer;
+    color: white;
+    transition: 0.2s ease;
 }
 
 .icon {
@@ -184,6 +189,7 @@
     justify-content: left;
     align-items: center;
     gap: 12px;
+    z-index: 2;
 }
 
 .info p {
@@ -196,6 +202,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .info p:hover {

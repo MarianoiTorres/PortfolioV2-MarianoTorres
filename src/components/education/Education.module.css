@@ -1,0 +1,109 @@
+.container {
+
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to right , #181333, #020105);
+    gap: 20px;
+    
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); 
+    z-index: 0; 
+}
+
+.title {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+
+.principalTitle {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    color: rgb(141, 116, 250);
+    text-shadow: -2px -2px 2px #292157;
+    position: absolute;
+    bottom: 0;
+    left:43%;
+    letter-spacing: 5px;
+    font-family: 'font3';
+}
+
+.titleRepeated {
+    color: rgba(102, 102, 102, 0.2);
+    font-size: 75px;
+    letter-spacing: 5px;
+    font-family: 'font3';
+    z-index: 1;
+    vertical-align: bottom;
+    position: absolute;
+    bottom: 0;
+}
+
+.containerEducation {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    width: 100%;
+
+}
+
+.secondContainerEducation {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    width: 80%;
+    gap: 150px;
+
+}
+
+.education {
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(
+        195deg,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+    );
+    backdrop-filter: blur(151px);
+    -webkit-backdrop-filter: blur(151px);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(121, 97, 255, 0.7), 0 0 10px rgba(121, 97, 255, 0.7), 0 0 20px rgba(121, 97, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+}
+
+.education img {
+    width: 210px;
+}
+
+.education p {
+    font-size: 13px;
+}
+
+.titleEducation {
+    letter-spacing: 1px;
+}

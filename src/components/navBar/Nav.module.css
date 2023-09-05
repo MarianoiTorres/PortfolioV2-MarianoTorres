@@ -21,6 +21,7 @@
 .secondContainer a{
     color: #7961ff;
     letter-spacing: 2px;
+    cursor: pointer;
 }
 
 .secondContainer a:hover{

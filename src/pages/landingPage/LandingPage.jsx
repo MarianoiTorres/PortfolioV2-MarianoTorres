@@ -15,7 +15,7 @@ const LandingPage = () => {
     useEffect(() => {
         const timeoutId = setTimeout(() => {
             setVisible(true);
-        }, 2000);
+        }, 1500);
 
         return () => clearTimeout(timeoutId);
     }, [])

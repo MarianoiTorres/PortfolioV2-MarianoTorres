@@ -1,5 +1,5 @@
 import style from './Projects.module.css'
-import { motion, } from "framer-motion"
+import { motion } from "framer-motion"
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { BiLinkExternal } from 'react-icons/bi';
 
@@ -35,15 +35,15 @@ const Projects = () => {
                     </motion.div>
                     <div className={style.containerImage} data-aos="fade-left">
                         <div className={style.linksDiv}>
-                            <div className={style.button}>
+                            <a href='https://github.com/MarianoiTorres/Trello-Clone' target='_blank' className={style.button}>
                                 <AiFillGithub className={style.icon} />
-                            </div>
-                            <div className={style.button}>
+                            </a>
+                            <a href='https://www.linkedin.com/posts/mariano-torres-1b717b236_angular-mongodb-typescript-activity-7102061860497031171-PcRA?utm_source=share&utm_medium=member_desktop' target='_blank' className={style.button}>
                                 <AiFillLinkedin className={style.icon} />
-                            </div>
-                            <div className={style.button}>
+                            </a>
+                            <a href='https://trello-clone-two-rouge.vercel.app/' target='_blank' className={style.button}>
                                 <BiLinkExternal className={style.icon} />
-                            </div>
+                            </a>
                         </div>
                         <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1693277282/1_udblnq.png'></motion.img>
                     </div>
@@ -51,15 +51,15 @@ const Projects = () => {
                 <motion.div className={style.projectsDiv}>
                     <div className={style.containerImage} data-aos="fade-right">
                         <div className={style.linksDivReverse}>
-                            <div className={style.button}>
+                            <a className={style.button} href='https://github.com/MarianoiTorres/PF-TheChocolateHub' target='_blank'>
                                 <AiFillGithub className={style.icon} />
-                            </div>
-                            <div className={style.button}>
+                            </a>
+                            <a className={style.button} href='https://www.linkedin.com/posts/mariano-torres-1b717b236_react-redux-nodejs-activity-7060976571414646784-GtMv?utm_source=share&utm_medium=member_desktop' target='_blank'> 
                                 <AiFillLinkedin className={style.icon} />
-                            </div>
-                            <div className={style.button}>
+                            </a>
+                            <a className={style.button} href='https://deploy-front2.vercel.app/home' target='_blank'>
                                 <BiLinkExternal className={style.icon} />
-                            </div>
+                            </a>
                         </div>
                         <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1684008128/Captura_xfpyjd.png' ></motion.img>
                     </div>
@@ -88,15 +88,15 @@ const Projects = () => {
                     </motion.div>
                     <div className={style.containerImage} data-aos="fade-left">
                     <div className={style.linksDiv}>
-                            <div className={style.button}>
+                            <a className={style.button} href='https://github.com/MarianoiTorres/PI-Videogames' target='_blank'>
                                 <AiFillGithub className={style.icon} />
-                            </div>
-                            <div className={style.button}>
+                            </a>
+                            <a className={style.button} href='https://www.linkedin.com/posts/mariano-torres-1b717b236_soyhenry-bootcamp-frontend-activity-7049603269748269056-sVvl?utm_source=share&utm_medium=member_desktop' target='_blank'>
                                 <AiFillLinkedin className={style.icon} />
-                            </div>
-                            <div className={style.button}>
+                            </a>
+                            <a className={style.button} href='https://pi-videogames-mdjn.vercel.app/' target='_blank'>
                                 <BiLinkExternal className={style.icon} />
-                            </div>
+                            </a>
                         </div>
                         <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1684008036/Captura_ktt5bg.png' ></motion.img>
                     </div>
@@ -105,15 +105,15 @@ const Projects = () => {
                 <motion.div className={style.projectsDiv}>
                     <div className={style.containerImage} data-aos="fade-right">
                         <div className={style.linksDivReverse}>
-                            <div className={style.button}>
+                            <a className={style.button} href='https://github.com/MarianoiTorres/PortfolioV2-MarianoTorres' target='_blank'>
                                 <AiFillGithub className={style.icon} />
-                            </div>
-                            <div className={style.button}>
+                            </a>
+                            <a className={style.button} href='' target='_blank'>
                                 <AiFillLinkedin className={style.icon} />
-                            </div>
-                            <div className={style.button}>
+                            </a>
+                            <a className={style.button} href='' target='_blank'>
                                 <BiLinkExternal className={style.icon} />
-                            </div>
+                            </a>
                         </div>
                         <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1693775336/2_knx7vp.png' ></motion.img>
                     </div>

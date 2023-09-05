@@ -2,6 +2,7 @@ import style from './Nav.module.css'
 import { motion } from "framer-motion"
 import { BiArrowFromRight } from "react-icons/bi";
 import { useNavigate } from 'react-router-dom';
+import {Link} from 'react-scroll'
 
 const Nav = () => {
 
@@ -47,12 +48,12 @@ const Nav = () => {
                     }
                 }
             >
-                <a href="#home">Inicio</a>
-                <a href="#about">Sobre Mi</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Proyectos</a>
-                <a href="">Educacion</a>
-                <a href="">Contacto</a>
+                <Link to='home' spy={true} smooth={true}>Inicio</Link>
+                <Link to='about' spy={true} smooth={true}>Sobre Mi</Link>
+                <Link to='skills' spy={true} smooth={true}>Skills</Link>
+                <Link to='projects' spy={true} smooth={true}>Proyectos</Link>
+                <Link to='education' spy={true} smooth={true}>Estudios</Link>
+                <Link to='contact' spy={true} smooth={true}>Contacto</Link>
             </motion.div>
         </div>
     )

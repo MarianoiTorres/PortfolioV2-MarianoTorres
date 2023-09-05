@@ -5,6 +5,8 @@ import Nav from "../../components/navBar/Nav"
 import About from "../../components/about/About"
 import Skills from "../../components/skills/Skills"
 import Projects from "../../components/projects/Projects"
+import Education from "../../components/education/Education"
+import Contact from "../../components/contact/Contact"
 
 const HomePage = () => {
     return (
@@ -27,6 +29,12 @@ const HomePage = () => {
             </motion.div>
             <motion.div>
                 <Projects />
+            </motion.div>
+            <motion.div>
+                <Education />
+            </motion.div>
+            <motion.div>
+                <Contact />
             </motion.div>
         </motion.div>
     )

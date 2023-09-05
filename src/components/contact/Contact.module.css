@@ -1,0 +1,146 @@
+.container {
+
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to right , #181333, #020105);
+    gap: 20px;
+    
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); 
+    z-index: 0; 
+}
+
+.title {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+
+.principalTitle {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    color: rgb(141, 116, 250);
+    text-shadow: -2px -2px 2px #292157;
+    position: absolute;
+    bottom: 0;
+    left:43%;
+    letter-spacing: 5px;
+    font-family: 'font3';
+}
+
+.titleRepeated {
+    color: rgba(102, 102, 102, 0.2);
+    font-size: 75px;
+    letter-spacing: 5px;
+    font-family: 'font3';
+    z-index: 1;
+    vertical-align: bottom;
+    position: absolute;
+    bottom: 0;
+}
+
+.containerForm {
+    width: 100%;
+    flex: 1;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.secondContainerForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 480px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    width: 50%;
+    height: 450px;
+    justify-content: center;
+    background: linear-gradient(
+        195deg,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+    );
+    backdrop-filter: blur(151px);
+    -webkit-backdrop-filter: blur(151px);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(121, 97, 255, 0.7), 0 0 10px rgba(121, 97, 255, 0.7), 0 0 20px rgba(121, 97, 255, 0.7);
+}
+
+form p {
+    font-family: 'font1';
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 19px;
+}
+
+form input {
+    width: 350px;
+    height: 34px;
+    box-sizing: border-box;
+    padding-left: 5px;
+    border-radius: 5px;
+    background: none;
+    border: 1px solid rgb(141, 116, 250);
+    font-family: 'font1';
+}
+
+
+form textarea {
+    width: 350px;
+    max-width: 350px;
+    height: 70px;
+    border: none;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 5px;
+    background: none;
+    border: 1px solid rgb(141, 116, 250);
+    font-family: 'font1';
+}
+
+.submit {
+    background-color: rgba(133, 111, 255, 0.7);
+    border: none;
+    font-family: 'font1';
+    letter-spacing: 2px;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+
+.submit:hover {
+    background-color: rgba(118, 94, 255, 0.7);
+    transform: scale(1.01);
+    transition: 0.2s ease;
+}
