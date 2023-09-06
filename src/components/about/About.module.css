@@ -134,3 +134,42 @@ b {
 .image img {
     width: 300px;
 }
+
+@media screen and (max-width: 500px) {
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        gap:30px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info2 {
+        width: 80%;
+        height: fit-content;
+        margin: 0;
+    }
+
+    .info {
+        width: 80%;
+        left: 0;
+        z-index: 2;
+    }
+
+    .secondContainer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .image { 
+      right: 0;
+      bottom: 2px;
+      z-index: 2;
+    }
+
+    .image img {
+        width: 230px;
+    }
+}

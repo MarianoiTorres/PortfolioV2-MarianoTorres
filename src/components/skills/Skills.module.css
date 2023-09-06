@@ -3,7 +3,8 @@
 
     position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
     background: none;
     display: flex;
     justify-content: center;
@@ -80,7 +81,7 @@ ul {
     list-style: none;
     gap: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -118,3 +119,42 @@ li p {
     bottom: 5px;
     text-shadow: -2px -2px 2px #5d4bc2;
 }
+
+@media screen and (max-width: 500px) {
+
+    .container {
+        gap: 20px;
+        padding-bottom: 50px;
+    }
+
+    .title {
+        width: 100%;
+    }
+
+    .principalTitle {
+        width: 98%;    
+        left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .secondContainerSkills {
+            width: 100%;
+    }
+
+    li {
+        display: flex;
+        justify-content: center;
+        width: 120px;
+        height: 110px;
+        position: relative;
+    }
+
+    li p {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        bottom: 0;
+    }
+}
+

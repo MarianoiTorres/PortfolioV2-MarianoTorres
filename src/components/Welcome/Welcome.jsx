@@ -37,6 +37,9 @@ const Welcome = () => {
                 <img src="https://www.motionspace.cz/wp-content/uploads/2019/03/ilustracka.png" alt="" />
             </motion.div>
             </div>
+
+
+
         </motion.div>
     )
 }

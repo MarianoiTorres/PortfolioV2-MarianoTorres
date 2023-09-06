@@ -31,7 +31,6 @@ const Projects = () => {
                             <p>NgRx</p>
                             <p>MongoDB</p>
                         </div>
-                        <motion.div className={style.projectInfo} data-aos="fade-right">Aplicacion para la gestión de proyectos y tareas. Permite crear tableros con listas y tarjetas que representan tareas. Puedes mover tarjetas entre listas. Incluye funciones de colaboración en tiempo real y asignación de tareas</motion.div>
                     </motion.div>
                     <div className={style.containerImage} data-aos="fade-left">
                         <div className={style.linksDiv}>
@@ -47,8 +46,19 @@ const Projects = () => {
                         </div>
                         <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1693277282/1_udblnq.png'></motion.img>
                     </div>
+                        <motion.div className={style.projectInfo} data-aos="fade-right">Aplicacion para la gestión de proyectos y tareas. Permite crear tableros con listas y tarjetas que representan tareas. Puedes mover tarjetas entre listas. Incluye funciones de colaboración en tiempo real y asignación de tareas</motion.div>
                 </motion.div>
-                <motion.div className={style.projectsDiv}>
+                <motion.div className={style.projectsDivReverse}>
+                    <motion.div className={style.projectTitleReverse}>
+                        <div className={style.titleProject} data-aos="fade-left"><b>Proyecto Grupal</b><p>The Chocolate Hub</p></div>
+                        <div className={style.infoReverse} data-aos="fade-left">
+                            <p>React</p>
+                            <p>Express</p>
+                            <p>PostgreSQL</p>
+                            <p>Sequelize</p>
+                            <p>Tailwind</p>
+                        </div>
+                    </motion.div>
                     <div className={style.containerImage} data-aos="fade-right">
                         <div className={style.linksDivReverse}>
                             <a className={style.button} href='https://github.com/MarianoiTorres/PF-TheChocolateHub' target='_blank'>
@@ -63,16 +73,6 @@ const Projects = () => {
                         </div>
                         <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1684008128/Captura_xfpyjd.png' ></motion.img>
                     </div>
-                    <motion.div className={style.projectTitleReverse}>
-                        <div className={style.titleProject} data-aos="fade-left"><b>Proyecto Grupal</b><p>The Chocolate Hub</p></div>
-                        <div className={style.infoReverse} data-aos="fade-left">
-                            <p>React</p>
-                            <p>Express</p>
-                            <p>PostgreSQL</p>
-                            <p>Sequelize</p>
-                            <p>Tailwind</p>
-                        </div>
-                    </motion.div>
                     <motion.div className={style.projectInfoReverse} data-aos="fade-left">E-commerce de venta de chocolates, Aceptamos pasarelas seguras de pago como MercadoPago y criptomonedas, y ofrecemos un registro fácil con cuentas de Google o Facebook. Los usuarios pueden valorar y comentar productos.</motion.div>
                 </motion.div>
                 <motion.div className={style.projectsDiv}>
@@ -102,7 +102,16 @@ const Projects = () => {
                     </div>
                     <motion.div className={style.projectInfo} data-aos="fade-right">Single-page application que consume información sobre videojuegos de la API RAWG, cuenta con las siguiente funcionalidades: -Paginado -Filtrar por género/origen -Ordenar por rating/alfabéticamente-Buscar juegos -Crear un juego</motion.div>
                 </motion.div>
-                <motion.div className={style.projectsDiv}>
+                <motion.div className={style.projectsDivReverse}>
+                    <motion.div className={style.projectTitleReverse}>
+                        <div className={style.titleProject} data-aos="fade-left"><b>Proyecto Personal</b><p>Mi Portfolio :D</p></div>
+                        <div className={style.infoReverse} data-aos="fade-left">
+                            <p>React</p>
+                            <p>CSS</p>
+                            <p>F. Motion</p>
+                            <p>AOS</p>
+                        </div>
+                    </motion.div>
                     <div className={style.containerImage} data-aos="fade-right">
                         <div className={style.linksDivReverse}>
                             <a className={style.button} href='https://github.com/MarianoiTorres/PortfolioV2-MarianoTorres' target='_blank'>
@@ -117,15 +126,6 @@ const Projects = () => {
                         </div>
                         <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1693775336/2_knx7vp.png' ></motion.img>
                     </div>
-                    <motion.div className={style.projectTitleReverse}>
-                        <div className={style.titleProject} data-aos="fade-left"><b>Proyecto Personal</b><p>Mi Portfolio :D</p></div>
-                        <div className={style.infoReverse} data-aos="fade-left">
-                            <p>React</p>
-                            <p>CSS</p>
-                            <p>F. Motion</p>
-                            <p>AOS</p>
-                        </div>
-                    </motion.div>
                     <motion.div className={style.projectInfoReverse} data-aos="fade-left">good</motion.div>
                 </motion.div>
             </div>

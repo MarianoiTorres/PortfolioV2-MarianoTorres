@@ -67,3 +67,15 @@ h2 {
     position: relative;
     z-index: 0;
 }
+
+@media screen and (max-width: 500px) {
+
+    .containerTitle {
+        width: 100%;
+    }
+
+    .containerImage {
+        display: none;
+    }
+
+}
