@@ -3,7 +3,7 @@
     height: 100vh;
     display: flex;
     box-sizing: border-box;
-
+    
 }
 
 p, h1, h2 {
@@ -21,9 +21,6 @@ p, h1, h2 {
     box-sizing: border-box;
 }
 
-.html {
-
-}
 
 .body {
     padding-left: 35px;

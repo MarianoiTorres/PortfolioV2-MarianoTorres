@@ -4,9 +4,11 @@ import style from './landingPage.module.css'
 import { useEffect, useState } from "react"
 import { FiArrowRight } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
+import { AiOutlineDownload } from "react-icons/ai";
 
 
 const LandingPage = () => {
+    
 
     const navigate = useNavigate()
 
@@ -78,8 +80,9 @@ const LandingPage = () => {
                     <a href="https://github.com/MarianoiTorres" target="_blank" className={style.buttonLink}>
                         GitHub
                     </a>
-                    <a href="" className={style.buttonLink}>
+                    <a href="../../assets/file/CV" download="CV - Mariano Torres.pdf" className={style.buttonLink}>
                         Curriculum
+                        <AiOutlineDownload className={style.iconDownload}/>
                     </a>
                 </motion.div>
             </div>}
