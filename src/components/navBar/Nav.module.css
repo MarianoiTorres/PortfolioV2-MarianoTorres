@@ -20,7 +20,7 @@
 }
 
 .secondContainer a{
-    color: #7961ff;
+    color: rgb(141, 116, 250);
     letter-spacing: 2px;
     cursor: pointer;
 }
@@ -54,7 +54,7 @@
     position: relative;
     width: 23px;
     height: 23px;
-    color: #7961ff;
+    color: rgb(141, 116, 250);
     z-index: 1;
 }
 

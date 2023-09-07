@@ -173,4 +173,40 @@ form textarea {
     box-shadow: 0 0 3px rgba(121, 97, 255, 0.7), 0 0 6px rgba(121, 97, 255, 0.7), 0 0 10px rgba(121, 97, 255, 0.7);
 }
 
+@media screen and (max-width: 500px) {
+
+    .principalTitle {
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+ 
+    .secondContainerForm {
+        width: 350px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    form input {
+        width: 80%;
+    }
+
+    form textarea {
+        width: 80%;
+    }
+
+    .containerForm {
+        flex: 0;
+        padding-bottom: 40px;
+    }
+
+    .container {
+        display: flex;
+        justify-content:flex-start;
+        min-height: fit-content;
+    }
+}
 

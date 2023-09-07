@@ -378,5 +378,8 @@
         position: relative;
     }
 
-    .linksDivReverse {}
+    .linksDivReverse {
+       left: auto;
+       right: 0;
+    }
 }

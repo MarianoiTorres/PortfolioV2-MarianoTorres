@@ -8,6 +8,32 @@
   src: url('./assets/fonts/Yellowtail-Regular.ttf');
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(
+        195deg,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+    );
+    backdrop-filter: blur(51px);
+    -webkit-backdrop-filter: blur(51px);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+        195deg,
+        rgb(141, 116, 250, 0.7),
+        rgb(141, 116, 250, 0.7)
+    );
+    backdrop-filter: blur(151px);
+    -webkit-backdrop-filter: blur(151px);
+
+  border-radius: 5px;
+
+}
 
 :root {
   
