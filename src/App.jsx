@@ -10,6 +10,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
+      <Nav></Nav>
         <Routes>
           <Route path='' element={<Intro />} />
           <Route path='/landing' element={<LandingPage />} />

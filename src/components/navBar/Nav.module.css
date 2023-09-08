@@ -7,8 +7,25 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 9999;
+    background: none;
+    background: linear-gradient(to right, #181333, #020105);
+}
 
+.containerNav::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); 
+    z-index: 0; 
+}
+
+.containerIconBack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .secondContainer {
@@ -17,12 +34,22 @@
     align-items: center;
     gap: 50px;
     color: white;
+    z-index: 1;
+}
+
+.nav {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 .secondContainer a{
     color: rgb(141, 116, 250);
     letter-spacing: 2px;
     cursor: pointer;
+
 }
 
 .secondContainer a:hover{
@@ -30,6 +57,19 @@
     transition: 0.2s ease;
     
 }
+
+.backLandingButton {
+    color: rgb(141, 116, 250);
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.backLandingButton:hover {
+    color: white;
+    transition: 0.2s ease;
+}
+
 
 .backContainer {
     position: absolute;
@@ -61,4 +101,77 @@
 .iconBack:hover {
     color: white;
     transition: 0.2s ease;
+}
+
+@media screen and (max-width: 500px) {
+    .containerNav {
+        height: fit-content;
+        flex-direction: column;
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+    }
+
+    .nav {
+        min-height:280px;
+        height: fit-content;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.2); 
+        width: 100%;
+    }
+
+    .containerMenu {
+        width: 100%;
+        height: 50px;
+        position: relative;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        padding-right: 20px;
+        z-index: 9999;
+        background-color: rgba(0, 0, 0, 0.2); 
+    }
+
+    .backContainer {
+        position: relative;
+        left: 0;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .back {
+        width: 100%;
+    }
+
+    .secondContainer {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .buttonBurger {
+        width: 50px;
+        height:80%;
+    }
+
+    .buttonBurger:hover {
+        color: rgb(141, 116, 250);
+    }
+
+    .secondContainer a {
+        height: 27px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .backLandingButton {
+        height: 27px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

@@ -44,7 +44,9 @@
     text-shadow: -2px -2px 2px #292157;
     position: absolute;
     bottom: 0;
-    left:45%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
     letter-spacing: 5px;
     font-family: 'font3';
 }
@@ -131,12 +133,7 @@ li p {
         width: 100%;
     }
 
-    .principalTitle {
-        width: 98%;    
-        left: 0;
-        display: flex;
-        justify-content: center;
-    }
+
 
     .secondContainerSkills {
             width: 100%;

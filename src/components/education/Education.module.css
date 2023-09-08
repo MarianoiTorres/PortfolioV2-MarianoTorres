@@ -44,7 +44,9 @@
     text-shadow: -2px -2px 2px #292157;
     position: absolute;
     bottom: 0;
-    left:43%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
     letter-spacing: 5px;
     font-family: 'font3';
 }
@@ -110,12 +112,7 @@
 
 @media screen and (max-width: 500px) {
 
-    .principalTitle {
-        left: 0;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
+
 
     .secondContainerEducation {
         display: flex;
