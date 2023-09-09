@@ -19,7 +19,6 @@ const HomePage = () => {
             transition={{ duration: 0.5 }}
         >
             <motion.div>
-                
                 <Welcome />
             </motion.div>
             <motion.div>

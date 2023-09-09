@@ -62,7 +62,7 @@
     color: rgb(141, 116, 250);
     letter-spacing: 2px;
     cursor: pointer;
-    margin-bottom: 10px;
+
 }
 
 .backLandingButton:hover {
@@ -115,29 +115,37 @@
     .nav {
         min-height:280px;
         height: fit-content;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
-        background-color: rgba(0, 0, 0, 0.2); 
+        background-color: rgba(0, 0, 0, 0.6); 
+        backdrop-filter: blur(11px);
+    -webkit-backdrop-filter: blur(11px);
         width: 100%;
+        position: absolute;
+        top: 0;
+        z-index: 1;
     }
+
+    
 
     .containerMenu {
         width: 100%;
         height: 50px;
-        position: relative;
+        position: absolute;
+        top: 0;
         display: flex;
         justify-content: right;
         align-items: center;
         padding-right: 20px;
-        z-index: 9999;
-        background-color: rgba(0, 0, 0, 0.2); 
+        z-index: 1;
+        background: none;
     }
 
     .backContainer {
         position: relative;
         left: 0;
         justify-content: center;
-        width: 100%;
+        width: 50%;
     }
 
     .back {
@@ -146,13 +154,19 @@
 
     .secondContainer {
         flex-direction: column;
-        gap: 10px;
-        width: 100%;
+        gap: 0;
+        width: 50%;
     }
 
     .buttonBurger {
         width: 50px;
         height:80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        padding-right: 5px;
+        margin-left: auto;
     }
 
     .buttonBurger:hover {
@@ -160,7 +174,7 @@
     }
 
     .secondContainer a {
-        height: 27px;
+        height: 37px;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -168,10 +182,15 @@
     }
 
     .backLandingButton {
-        height: 27px;
+        height: 100%;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .containerBackLanding {
+        width: 100%;
+        height: 37px;
     }
 }
