@@ -42,14 +42,13 @@ const Nav = () => {
         <div className={style.containerNav}>
             {
                 isMobile && <GiHamburgerMenu className={style.buttonBurger} onClick={openMenuHandler} />
-               
             }
-            {
+            
                 <motion.div
                     className={style.nav}
-                    style={{ display: isMobile && !openMenu ? 'none' : 'flex' }}
-                    initial={animate}
+                    initial={{ y: 0 }}
                     animate={animate}
+                    exit={{y: -100 }}
                     transition={{ ease: 'circOut', duration: 0.3 }}
                 >
                     <motion.div className={style.backContainer}>
@@ -111,7 +110,7 @@ const Nav = () => {
                     </motion.div>
 
                 </motion.div>
-            }
+            
         </div>
     )
 }

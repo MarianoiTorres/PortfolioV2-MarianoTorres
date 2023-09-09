@@ -110,6 +110,12 @@
         position: fixed;
         z-index: 2;
         width: 100%;
+        background: none;
+    }
+
+    .containerNav::before {
+        background-color:none;
+        content:none;
     }
 
     .nav {
@@ -119,7 +125,7 @@
         align-items: center;
         background-color: rgba(0, 0, 0, 0.6); 
         backdrop-filter: blur(11px);
-    -webkit-backdrop-filter: blur(11px);
+        -webkit-backdrop-filter: blur(11px);
         width: 100%;
         position: absolute;
         top: 0;
@@ -159,7 +165,7 @@
     }
 
     .buttonBurger {
-        width: 50px;
+        width:40px;
         height:80%;
         display: flex;
         justify-content: center;
@@ -167,6 +173,7 @@
         z-index: 2;
         padding-right: 5px;
         margin-left: auto;
+        outline: none;
     }
 
     .buttonBurger:hover {

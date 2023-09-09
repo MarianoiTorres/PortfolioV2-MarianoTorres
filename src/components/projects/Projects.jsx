@@ -1,9 +1,14 @@
 import style from './Projects.module.css'
 import { motion } from "framer-motion"
+import { useState } from 'react';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { BiLinkExternal } from 'react-icons/bi';
 
 const Projects = () => {
+
+    const [isHovered, setIsHovered] = useState(false)
+    const [projectName, setProjectName] = useState('')
+
     return (
         <div className={style.container} id='projects'>
             <div className={style.title} data-aos="zoom-in">
@@ -44,9 +49,22 @@ const Projects = () => {
                                 <BiLinkExternal className={style.icon} />
                             </a>
                         </div>
-                        <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1693277282/1_udblnq.png'></motion.img>
+                        <motion.div
+                            className={style.imageOrGif}
+                            onMouseEnter={() => {
+                                setIsHovered(true)
+                                setProjectName('trello')
+                            }}
+                            onMouseLeave={() => { setIsHovered(false) }}
+                        >
+                            {
+                                isHovered && projectName === 'trello'
+                                    ? <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1693277315/ezgif-5-66968bb787_maoc7l.gif' />
+                                    : <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1693277282/1_udblnq.png'></motion.img>
+                            }
+                        </motion.div>
                     </div>
-                        <motion.div className={style.projectInfo} data-aos="fade-right">Aplicacion para la gestión de proyectos y tareas. Permite crear tableros con listas y tarjetas que representan tareas. Puedes mover tarjetas entre listas. Incluye funciones de colaboración en tiempo real y asignación de tareas</motion.div>
+                    <motion.div className={style.projectInfo} data-aos="fade-right">Aplicacion para la gestión de proyectos y tareas. Permite crear tableros con listas y tarjetas que representan tareas. Puedes mover tarjetas entre listas. Incluye funciones de colaboración en tiempo real y asignación de tareas</motion.div>
                 </motion.div>
                 <motion.div className={style.projectsDivReverse}>
                     <motion.div className={style.projectTitleReverse}>
@@ -64,14 +82,27 @@ const Projects = () => {
                             <a className={style.button} href='https://github.com/MarianoiTorres/PF-TheChocolateHub' target='_blank'>
                                 <AiFillGithub className={style.icon} />
                             </a>
-                            <a className={style.button} href='https://www.linkedin.com/posts/mariano-torres-1b717b236_react-redux-nodejs-activity-7060976571414646784-GtMv?utm_source=share&utm_medium=member_desktop' target='_blank'> 
+                            <a className={style.button} href='https://www.linkedin.com/posts/mariano-torres-1b717b236_react-redux-nodejs-activity-7060976571414646784-GtMv?utm_source=share&utm_medium=member_desktop' target='_blank'>
                                 <AiFillLinkedin className={style.icon} />
                             </a>
                             <a className={style.button} href='https://deploy-front2.vercel.app/home' target='_blank'>
                                 <BiLinkExternal className={style.icon} />
                             </a>
                         </div>
-                        <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1684008128/Captura_xfpyjd.png' ></motion.img>
+                        <motion.div
+                            className={style.imageOrGif}
+                            onMouseEnter={() => {
+                                setIsHovered(true)
+                                setProjectName('chocolat')
+                            }}
+                            onMouseLeave={() => { setIsHovered(false) }}
+                        >
+                            {
+                                isHovered && projectName === 'chocolat'
+                                    ? <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1693277315/ezgif-5-66968bb787_maoc7l.gif' />
+                                    : <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1684008128/Captura_xfpyjd.png' ></motion.img>
+                            }
+                        </motion.div>
                     </div>
                     <motion.div className={style.projectInfoReverse} data-aos="fade-left">E-commerce de venta de chocolates, Aceptamos pasarelas seguras de pago como MercadoPago y criptomonedas, y ofrecemos un registro fácil con cuentas de Google o Facebook. Los usuarios pueden valorar y comentar productos.</motion.div>
                 </motion.div>
@@ -87,7 +118,7 @@ const Projects = () => {
                         </div>
                     </motion.div>
                     <div className={style.containerImage} data-aos="fade-left">
-                    <div className={style.linksDiv}>
+                        <div className={style.linksDiv}>
                             <a className={style.button} href='https://github.com/MarianoiTorres/PI-Videogames' target='_blank'>
                                 <AiFillGithub className={style.icon} />
                             </a>
@@ -98,7 +129,20 @@ const Projects = () => {
                                 <BiLinkExternal className={style.icon} />
                             </a>
                         </div>
-                        <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1684008036/Captura_ktt5bg.png' ></motion.img>
+                        <motion.div
+                            className={style.imageOrGif}
+                            onMouseEnter={() => {
+                                setIsHovered(true)
+                                setProjectName('videogames')
+                            }}
+                            onMouseLeave={() => { setIsHovered(false) }}
+                        >
+                            {
+                                isHovered && projectName === 'videogames'
+                                    ? <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1693277315/ezgif-5-66968bb787_maoc7l.gif' />
+                                    : <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1684008036/Captura_ktt5bg.png' ></motion.img>
+                            }
+                        </motion.div>
                     </div>
                     <motion.div className={style.projectInfo} data-aos="fade-right">Single-page application que consume información sobre videojuegos de la API RAWG, cuenta con las siguiente funcionalidades: -Paginado -Filtrar por género/origen -Ordenar por rating/alfabéticamente-Buscar juegos -Crear un juego</motion.div>
                 </motion.div>
@@ -124,7 +168,21 @@ const Projects = () => {
                                 <BiLinkExternal className={style.icon} />
                             </a>
                         </div>
-                        <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1693775336/2_knx7vp.png' ></motion.img>
+                        <motion.div
+                            className={style.imageOrGif}
+                            onMouseEnter={() => {
+                                setIsHovered(true)
+                                setProjectName('portfolio')
+                            }}
+                            onMouseLeave={() => { setIsHovered(false) }}
+                        >
+                            {
+
+                                isHovered && projectName === 'portfolio'
+                                    ? <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1693277315/ezgif-5-66968bb787_maoc7l.gif' />
+                                    : <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1693775336/2_knx7vp.png' ></motion.img>
+                            }
+                        </motion.div>
                     </div>
                     <motion.div className={style.projectInfoReverse} data-aos="fade-left">good</motion.div>
                 </motion.div>
