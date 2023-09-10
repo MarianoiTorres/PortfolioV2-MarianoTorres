@@ -26,8 +26,7 @@ const Education = () => {
      data-aos-anchor-placement="center-bottom">
                     <motion.div
                         className={style.education}
-                        transition={{duration: 0.4}}
-                        whileHover={{ scale: 1.05, cursor: 'pointer' }}
+                        
                     >
                         <b className={style.titleEducation}>Universidad Tecnologica Nacional</b>
                         <motion.img src={utn} alt="UTN" />
@@ -37,8 +36,7 @@ const Education = () => {
                     </motion.div>
                     <motion.div
                         className={style.education}
-                        transition={{duration: 0.4}}
-                        whileHover={{ scale: 1.05, cursor: 'pointer' }}
+                       
                     >
                         <b className={style.titleEducation}>Soy Henry</b>
                         <motion.img src={henry} alt="SOYHENRY"/>

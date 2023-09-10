@@ -49,6 +49,7 @@
     justify-content: center;
     letter-spacing: 5px;
     font-family: 'font3';
+    user-select: none;
 }
 
 .titleRepeated {
@@ -60,6 +61,7 @@
     vertical-align: bottom;
     position: absolute;
     bottom: 0;
+    user-select: none;
 }
 
 .containerEducation {

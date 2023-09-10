@@ -47,7 +47,7 @@
     letter-spacing: 5px;
     font-family: 'font3';
     width: fit-content;
-
+    user-select: none;
 
 }
 
@@ -58,6 +58,7 @@
     align-items: top;
     justify-content: space-around;
     position: relative;
+    
 }
 
 .info {
@@ -130,6 +131,7 @@ b {
     font-family: 'font3';
     z-index: 1;
     display: flex;
+    user-select: none;
 }
 
 .image {

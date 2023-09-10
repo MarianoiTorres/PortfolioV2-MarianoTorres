@@ -50,6 +50,7 @@
     justify-content: center;
     letter-spacing: 5px;
     font-family: 'font3';
+    user-select: none;
 }
 
 .titleRepeated {
@@ -58,6 +59,7 @@
     letter-spacing: 5px;
     font-family: 'font3';
     z-index: 1;
+    user-select: none;
 }
 
 .containerSkills {
