@@ -2,7 +2,7 @@ import './App.css'
 import Intro from './components/intro/Intro'
 import Nav from './components/navBar/Nav'
 import HomePage from './pages/homePage/HomePage'
-import LandingPage from './pages/landingPage/LandingPage'
+import LandingPage2 from './pages/landingPage2/LandingPage2'
 import { Routes, Route, useLocation } from 'react-router-dom'
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
       }
       <Routes>
         <Route path='' element={<Intro />} />
-        <Route path='/landing' element={<LandingPage />} />
+        <Route path='/landing' element={<LandingPage2 />} />
         <Route path='/home' element={<HomePage />} />
       </Routes>
     </>
