@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { BiArrowFromRight } from "react-icons/bi";
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-scroll'
+import { NavLink } from 'react-router-dom'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { AiOutlineClose } from 'react-icons/ai'
 
@@ -65,7 +66,7 @@ const Nav = () => {
                                             visible: { x: 0, opacity: 1 }
                                         }
                                     }>
-                                    <Link to='/landing' className={style.backLandingButton}>Salir</Link>
+                                    <NavLink to='/landing' className={style.backLandingButton}>Salir</NavLink>
                                 </motion.div>
 
                                 : <motion.di initial={{ opacity: 0, x: -100 }}
