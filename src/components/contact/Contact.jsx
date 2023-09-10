@@ -9,13 +9,19 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 const Contact = () => {
 
-    const [open, setOpen] = React.useState(false);
+    const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
+    const [form, setForm] = useState({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+    })
 
     const submitHandler = (event) => {
         event.preventDefault()
-
+        console.log(form);
         emailjs
             .sendForm(
                 "service_hp31hl5",
@@ -23,9 +29,22 @@ const Contact = () => {
                 event.target,
                 "GQSlXjKIa8g38Q47P"
             )
-        .then((res) => {
-            handleOpen()
-        });
+            .then((res) => {
+                handleOpen()
+                setForm({
+                    name: '',
+                    email: '',
+                    subject: '',
+                    message: ''
+                })
+            });
+    }
+
+    const onChangeHandler = (e) => {
+        setForm({
+            ...form,
+            [e.target.name]: e.target.value
+        })
     }
 
     return (
@@ -46,16 +65,16 @@ const Contact = () => {
             </div>
             <div className={style.containerForm}>
                 <div className={style.secondContainerForm} >
-                    
+
                     <form onSubmit={submitHandler} data-aos="fade-up">
                         <p>¡Contactame!</p>
-                        <input autocomplete="off" placeholder='Nombre' type="text" name="name" required />
+                        <input autocomplete="off" onChange={onChangeHandler} value={form.name} placeholder='Nombre' type="text" name="name" required />
 
-                        <input autocomplete="off" placeholder='Email' type="email" name="email" required />
+                        <input autocomplete="off" onChange={onChangeHandler} value={form.email} placeholder='Email' type="email" name="email" required />
 
-                        <input autocomplete="off" placeholder='Asunto' type="text" name="subject" required />
+                        <input autocomplete="off" onChange={onChangeHandler} value={form.subject} placeholder='Asunto' type="text" name="subject" required />
 
-                        <textarea placeholder='Mensaje' id="message" name="message" required></textarea>
+                        <textarea placeholder='Mensaje' onChange={onChangeHandler} value={form.message} id="message" name="message" required></textarea>
 
                         <input className={style.submit} type="submit" value="Enviar" />
                     </form>
@@ -70,12 +89,12 @@ const Contact = () => {
             >
                 <Box sx={style} className={style.modal}                >
                     <Typography id="modal-modal-title" variant="h8" component="h2">
-                    ¡Gracias por tu propuesta!
+                        ¡Gracias por tu propuesta!
                     </Typography>
                     <Typography id="modal-modal-description" sx={{ mt: 1 }} className={style.p}>
-                    Tu propuesta ha sido recibida. 
-                    <br />
-                    Evaluaré tu propuesta y te proporcionaré una respuesta pronto.
+                        Tu propuesta ha sido recibida.
+                        <br />
+                        Evaluaré tu propuesta y te proporcionaré una respuesta pronto.
                     </Typography>
                 </Box>
             </Modal>

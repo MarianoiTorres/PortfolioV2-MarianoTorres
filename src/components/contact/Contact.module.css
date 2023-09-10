@@ -45,9 +45,10 @@
     position: absolute;
     bottom: 0;
     width: 40%;
-        display: flex;
-        justify-content: center;
+    display: flex;
+    justify-content: center;
     letter-spacing: 5px;
+    user-select: none;
     font-family: 'font3';
 }
 
@@ -60,6 +61,7 @@
     vertical-align: bottom;
     position: absolute;
     bottom: 0;
+    user-select: none;
 }
 
 .containerForm {

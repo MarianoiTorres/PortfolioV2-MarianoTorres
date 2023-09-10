@@ -180,7 +180,7 @@ const Projects = () => {
                 </motion.div>
                 <motion.div className={style.projectsDivReverse}>
                     <motion.div className={style.projectTitleReverse}>
-                        <div className={style.titleProject} data-aos="fade-left"><b>Proyecto Personal</b><p>Mi Portfolio :D</p></div>
+                        <div className={style.titleProject} data-aos="fade-left"><b>Proyecto Personal</b><p>Mi Portfolio</p></div>
                         <div className={style.infoReverse} data-aos="fade-left">
                             <p>React</p>
                             <p>CSS</p>
@@ -196,7 +196,7 @@ const Projects = () => {
                             <a className={style.button} href='' target='_blank'>
                                 <AiFillLinkedin className={style.icon} />
                             </a>
-                            <a className={style.button} href='' target='_blank'>
+                            <a className={style.button} href='https://portfolio-marianotorres.vercel.app/' target='_blank'>
                                 <BiLinkExternal className={style.icon} />
                             </a>
                         </div>
