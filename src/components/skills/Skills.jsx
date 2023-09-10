@@ -54,97 +54,177 @@ const Skills = () => {
                             setIsHovered(true);
                             setLanguageName('Javascript');
                         }}
-                            onMouseLeave={() => setIsHovered(false)} src={javascript} alt="Javascript" /> <p>{languageName === 'Javascript' && isHovered ? languageName : null}</p></motion.li>
+                            onMouseLeave={() => setIsHovered(false)} src={javascript} alt="Javascript" /> <motion.p
+                                initial={{ opacity: 0 }}
+                                animate={isHovered ? { opacity: 1 } : { opacity: 0 }}
+                                transition={isHovered ? { ease: 'easeIn', duration: 0.3 } : null}
+                            >{languageName === 'Javascript' && isHovered ? languageName : null}</motion.p>
+                        </motion.li>
                         <motion.li data-aos="zoom-in"
                         ><motion.img src={node} onMouseEnter={() => {
                             setIsHovered(true);
                             setLanguageName('Node');
                         }}
-                            onMouseLeave={() => setIsHovered(false)} alt="Node" /> <p>{languageName === 'Node' && isHovered ? languageName : null}</p></motion.li>
+                            onMouseLeave={() => setIsHovered(false)} alt="Node" /> <motion.p
+                                initial={{ opacity: 0 }}
+                                animate={isHovered ? { opacity: 1 } : { opacity: 0 }}
+                                transition={isHovered ? { ease:  'easeIn', duration: 0.3 } : null}
+                            >{languageName === 'Node' && isHovered ? languageName : null}</motion.p>
+                        </motion.li>
                         <motion.li data-aos="zoom-in"
                         ><motion.img src={express} onMouseEnter={() => {
                             setIsHovered(true);
                             setLanguageName('Express');
                         }}
-                            onMouseLeave={() => setIsHovered(false)} alt="Express" /> <p>{languageName === 'Express' && isHovered ? languageName : null}</p></motion.li>
+                            onMouseLeave={() => setIsHovered(false)} alt="Express" /> <motion.p
+                                initial={{ opacity: 0 }}
+                                animate={isHovered ? { opacity: 1 } : { opacity: 0 }}
+                                transition={isHovered ? { ease:  'easeIn', duration: 0.3 } : null}
+                            >{languageName === 'Express' && isHovered ? languageName : null}</motion.p>
+                        </motion.li>
                         <motion.li data-aos="zoom-in"
                         ><motion.img src={sequelize} onMouseEnter={() => {
                             setIsHovered(true);
                             setLanguageName('Sequelize');
                         }}
-                            onMouseLeave={() => setIsHovered(false)} alt="Sequelize" /> <p>{languageName === 'Sequelize' && isHovered ? languageName : null}</p></motion.li>
+                            onMouseLeave={() => setIsHovered(false)} alt="Sequelize" /> <motion.p
+                                initial={{ opacity: 0 }}
+                                animate={isHovered ? { opacity: 1 } : { opacity: 0 }}
+                                transition={isHovered ? { ease: 'easeIn', duration: 0.3 } : null}
+                            >{languageName === 'Sequelize' && isHovered ? languageName : null}</motion.p>
+                        </motion.li>
                         <motion.li data-aos="zoom-in"
                         ><motion.img src={postgre} onMouseEnter={() => {
                             setIsHovered(true);
                             setLanguageName('PostgreSQL');
                         }}
-                            onMouseLeave={() => setIsHovered(false)} alt="PostgreSQL" /> <p>{languageName === 'PostgreSQL' && isHovered ? languageName : null}</p></motion.li>
+                            onMouseLeave={() => setIsHovered(false)} alt="PostgreSQL" /> <motion.p
+                                initial={{ opacity: 0 }}
+                                animate={isHovered ? { opacity: 1 } : { opacity: 0 }}
+                                transition={isHovered ? { ease: 'easeIn', duration: 0.3 } : null}
+                            >{languageName === 'PostgreSQL' && isHovered ? languageName : null}</motion.p>
+                        </motion.li>
                         <motion.li data-aos="zoom-in"
                         ><motion.img src={react} onMouseEnter={() => {
                             setIsHovered(true);
                             setLanguageName('React');
                         }}
-                            onMouseLeave={() => setIsHovered(false)} alt="React" /> <p>{languageName === 'React' && isHovered ? languageName : null}</p></motion.li>
+                            onMouseLeave={() => setIsHovered(false)} alt="React" /> <motion.p
+                                initial={{ opacity: 0 }}
+                                animate={isHovered ? { opacity: 1 } : { opacity: 0 }}
+                                transition={isHovered ? { ease: 'easeIn', duration: 0.3 } : null}
+                            >{languageName === 'React' && isHovered ? languageName : null}</motion.p>
+                        </motion.li>
                         <motion.li data-aos="zoom-in"
                         ><motion.img src={redux} onMouseEnter={() => {
                             setIsHovered(true);
                             setLanguageName('Redux');
                         }}
-                            onMouseLeave={() => setIsHovered(false)} alt="Redux" /> <p>{languageName === 'Redux' && isHovered ? languageName : null}</p></motion.li>
+                            onMouseLeave={() => setIsHovered(false)} alt="Redux" /> <motion.p
+                                initial={{ opacity: 0 }}
+                                animate={isHovered ? { opacity: 1 } : { opacity: 0 }}
+                                transition={isHovered ? { ease: 'easeIn', duration: 0.3 } : null}
+                            >{languageName === 'Redux' && isHovered ? languageName : null}</motion.p>
+                        </motion.li>
                         <motion.li data-aos="zoom-in"
                         ><motion.img src={angular} onMouseEnter={() => {
                             setIsHovered(true);
                             setLanguageName('Angular');
                         }}
-                            onMouseLeave={() => setIsHovered(false)} alt="Angular" /> <p>{languageName === 'Angular' && isHovered ? languageName : null}</p></motion.li>
+                            onMouseLeave={() => setIsHovered(false)} alt="Angular" /> <motion.p
+                                initial={{ opacity: 0 }}
+                                animate={isHovered ? { opacity: 1 } : { opacity: 0 }}
+                                transition={isHovered ? { ease: 'easeIn', duration: 0.3 } : null}
+                            >{languageName === 'Angular' && isHovered ? languageName : null}</motion.p>
+                        </motion.li>
                         <motion.li data-aos="zoom-in"
                         ><motion.img src={ngrx} onMouseEnter={() => {
                             setIsHovered(true);
                             setLanguageName('NgRx');
                         }}
-                            onMouseLeave={() => setIsHovered(false)} alt="NgRx" /> <p>{languageName === 'NgRx' && isHovered ? languageName : null}</p></motion.li>
+                            onMouseLeave={() => setIsHovered(false)} alt="NgRx" /> <motion.p
+                                initial={{ opacity: 0 }}
+                                animate={isHovered ? { opacity: 1 } : { opacity: 0 }}
+                                transition={isHovered ? { ease: 'easeIn', duration: 0.3 } : null}
+                            >{languageName === 'NgRx' && isHovered ? languageName : null}</motion.p>
+                        </motion.li>
                         <motion.li data-aos="zoom-in"
                         ><motion.img src={mongo} onMouseEnter={() => {
                             setIsHovered(true);
                             setLanguageName('MongoDB');
                         }}
-                            onMouseLeave={() => setIsHovered(false)} alt="MongoDB" /> <p>{languageName === 'MongoDB' && isHovered ? languageName : null}</p></motion.li>
+                            onMouseLeave={() => setIsHovered(false)} alt="MongoDB" /> <motion.p
+                                initial={{ opacity: 0 }}
+                                animate={isHovered ? { opacity: 1 } : { opacity: 0 }}
+                                transition={isHovered ? { ease: 'easeIn', duration: 0.3 } : null}
+                            >{languageName === 'MongoDB' && isHovered ? languageName : null}</motion.p>
+                        </motion.li>
                         <motion.li data-aos="zoom-in"
                         ><motion.img src={css} onMouseEnter={() => {
                             setIsHovered(true);
                             setLanguageName('CSS');
                         }}
-                            onMouseLeave={() => setIsHovered(false)} alt="CSS" /> <p>{languageName === 'CSS' && isHovered ? languageName : null}</p></motion.li>
+                            onMouseLeave={() => setIsHovered(false)} alt="CSS" /> <motion.p
+                                initial={{ opacity: 0 }}
+                                animate={isHovered ? { opacity: 1 } : { opacity: 0 }}
+                                transition={isHovered ? { ease: 'easeIn', duration: 0.3 } : null}
+                            >{languageName === 'CSS' && isHovered ? languageName : null}</motion.p>
+                        </motion.li>
                         <motion.li data-aos="zoom-in"
                         ><motion.img src={html} onMouseEnter={() => {
                             setIsHovered(true);
                             setLanguageName('HTML');
                         }}
-                            onMouseLeave={() => setIsHovered(false)} alt="HTML" /> <p>{languageName === 'HTML' && isHovered ? languageName : null}</p></motion.li>
+                            onMouseLeave={() => setIsHovered(false)} alt="HTML" /> <motion.p
+                                initial={{ opacity: 0 }}
+                                animate={isHovered ? { opacity: 1 } : { opacity: 0 }}
+                                transition={isHovered ? { ease: 'easeIn', duration: 0.3 } : null}
+                            >{languageName === 'HTML' && isHovered ? languageName : null}</motion.p>
+                        </motion.li>
                         <motion.li data-aos="zoom-in"
                         ><motion.img src={typescript} onMouseEnter={() => {
                             setIsHovered(true);
                             setLanguageName('Typescript');
                         }}
-                            onMouseLeave={() => setIsHovered(false)} alt="Typescript" /> <p>{languageName === 'Typescript' && isHovered ? languageName : null}</p></motion.li>
+                            onMouseLeave={() => setIsHovered(false)} alt="Typescript" /> <motion.p
+                                initial={{ opacity: 0 }}
+                                animate={isHovered ? { opacity: 1 } : { opacity: 0 }}
+                                transition={isHovered ? { ease: 'easeIn', duration: 0.3 } : null}
+                            >{languageName === 'Typescript' && isHovered ? languageName : null}</motion.p>
+                        </motion.li>
                         <motion.li data-aos="zoom-in"
                         ><motion.img src={git} onMouseEnter={() => {
                             setIsHovered(true);
                             setLanguageName('Git');
                         }}
-                            onMouseLeave={() => setIsHovered(false)} alt="Git" /> <p>{languageName === 'Git' && isHovered ? languageName : null}</p></motion.li>
+                            onMouseLeave={() => setIsHovered(false)} alt="Git" /> <motion.p
+                                initial={{ opacity: 0 }}
+                                animate={isHovered ? { opacity: 1 } : { opacity: 0 }}
+                                transition={isHovered ? { ease: 'easeIn', duration: 0.3 } : null}
+                            >{languageName === 'Git' && isHovered ? languageName : null}</motion.p>
+                        </motion.li>
                         <motion.li data-aos="zoom-in"
                         ><motion.img onMouseEnter={() => {
                             setIsHovered(true);
                             setLanguageName('Bootstrap');
                         }}
-                            onMouseLeave={() => setIsHovered(false)} src={bootstrap} alt="Bootstrap" /> <p>{languageName === 'Bootstrap' && isHovered ? languageName : null}</p></motion.li>
+                            onMouseLeave={() => setIsHovered(false)} src={bootstrap} alt="Bootstrap" /> <motion.p
+                                initial={{ opacity: 0 }}
+                                animate={isHovered ? { opacity: 1 } : { opacity: 0 }}
+                                transition={isHovered ? { ease: 'easeIn', duration: 0.3 } : null}
+                            >{languageName === 'Bootstrap' && isHovered ? languageName : null}</motion.p>
+                        </motion.li>
                         <motion.li data-aos="zoom-in"
                         ><motion.img onMouseEnter={() => {
                             setIsHovered(true);
                             setLanguageName('MySQL');
                         }}
-                            onMouseLeave={() => setIsHovered(false)} src={mysql} alt="MySQL" /> <p>{languageName === 'MySQL' && isHovered ? languageName : null}</p></motion.li>
+                            onMouseLeave={() => setIsHovered(false)} src={mysql} alt="MySQL" /> <motion.p
+                                initial={{ opacity: 0 }}
+                                animate={isHovered ? { opacity: 1 } : { opacity: 0 }}
+                                transition={isHovered ? { ease: 'easeIn', duration: 0.3 } : null}
+                            >{languageName === 'MySQL' && isHovered ? languageName : null}</motion.p>
+                        </motion.li>
                     </ul>
                 </div>
             </div>

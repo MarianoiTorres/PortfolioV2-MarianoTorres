@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { BiLinkExternal } from 'react-icons/bi';
 
+
 const Projects = () => {
 
     const [isHovered, setIsHovered] = useState(false)
@@ -51,6 +52,7 @@ const Projects = () => {
                         </div>
                         <motion.div
                             className={style.imageOrGif}
+
                             onMouseEnter={() => {
                                 setIsHovered(true)
                                 setProjectName('trello')
@@ -59,8 +61,18 @@ const Projects = () => {
                         >
                             {
                                 isHovered && projectName === 'trello'
-                                    ? <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1693277315/ezgif-5-66968bb787_maoc7l.gif' />
-                                    : <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1693277282/1_udblnq.png'></motion.img>
+                                    ? <motion.img src='https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTE5YjdxbTY3dXp1OTFiajVlOWl2OTlyejYwMWZmOGc4NXI2czhxaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xD2LpyyJBLisrFlYnx/giphy.gif'
+                                        key='trelloGif'
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        transition={{ ease: 'easeIn', duration: 1 }}
+                                    />
+                                    : <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1693277282/1_udblnq.png'
+                                        key='trelloImg'
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        transition={{ ease: 'easeIn', duration: 0.3 }}
+                                    />
                             }
                         </motion.div>
                     </div>
@@ -99,8 +111,18 @@ const Projects = () => {
                         >
                             {
                                 isHovered && projectName === 'chocolat'
-                                    ? <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1693277315/ezgif-5-66968bb787_maoc7l.gif' />
-                                    : <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1684008128/Captura_xfpyjd.png' ></motion.img>
+                                    ? <motion.img src='https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOXQyZHo3ZWlqMW1wcG9wYnZ6d3VqbHpjb3h1bGc5enBseHVjNW9zNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wDPoUyW9a1y6fzFI7R/giphy.gif'
+                                        key='chocolateGif'
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        transition={{ ease: 'easeIn', duration: 1 }}
+                                    />
+                                    : <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1684008128/Captura_xfpyjd.png'
+                                        key='chocolateImg'
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        transition={{ ease: 'easeIn', duration: 0.3 }}
+                                    />
                             }
                         </motion.div>
                     </div>
@@ -139,8 +161,18 @@ const Projects = () => {
                         >
                             {
                                 isHovered && projectName === 'videogames'
-                                    ? <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1693277315/ezgif-5-66968bb787_maoc7l.gif' />
-                                    : <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1684008036/Captura_ktt5bg.png' ></motion.img>
+                                    ? <motion.img src='https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDhlYThsd2g1Mnd0aWI2cnh3bnAzNTZwZmJqYXczeWhuM2I4MWdrbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/18uVlBBk1oxDUqFhGl/giphy.gif'
+                                        key='videogamesGif'
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        transition={{ ease: 'easeIn', duration: 1 }}
+                                    />
+                                    : <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1684008036/Captura_ktt5bg.png'
+                                        key='videogamesImg'
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        transition={{ ease: 'easeIn', duration: 0.3 }}
+                                    />
                             }
                         </motion.div>
                     </div>
@@ -179,12 +211,22 @@ const Projects = () => {
                             {
 
                                 isHovered && projectName === 'portfolio'
-                                    ? <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1693277315/ezgif-5-66968bb787_maoc7l.gif' />
-                                    : <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1693775336/2_knx7vp.png' ></motion.img>
+                                    ? <motion.img src='https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3c5MzhqdzNpcjEzaWY3YzR6NndiNnN3cWtmb3VsYzlzbjdzcDB1OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mAsZuiUiHeziqNbtde/giphy.gif'
+                                        key='portfolioGif'
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        transition={{ ease: 'easeIn', duration: 1 }}
+                                    />
+                                    : <motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1693775336/2_knx7vp.png'
+                                        key='portfolioImg'
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        transition={{ ease: 'easeIn', duration: 0.3 }}
+                                    />
                             }
                         </motion.div>
                     </div>
-                    <motion.div className={style.projectInfoReverse} data-aos="fade-left">good</motion.div>
+                    <motion.div className={style.projectInfoReverse} data-aos="fade-left">Un vistazo a mi trayectoria y habilidades en diseño web y desarrollo. Quien soy, Mis proyectos y mi formacion académica.</motion.div>
                 </motion.div>
             </div>
         </div>

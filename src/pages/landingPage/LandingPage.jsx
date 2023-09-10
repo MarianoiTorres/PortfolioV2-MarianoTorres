@@ -81,7 +81,7 @@ const LandingPage = () => {
                         GitHub
                     </a>
                     <a href="../../assets/file/CV" download="CV - Mariano Torres.pdf" className={style.buttonLink}>
-                        Curriculum
+                        CV
                         <AiOutlineDownload className={style.iconDownload}/>
                     </a>
                 </motion.div>

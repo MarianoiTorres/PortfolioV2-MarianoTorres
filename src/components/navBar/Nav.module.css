@@ -49,12 +49,12 @@
     color: rgb(141, 116, 250);
     letter-spacing: 2px;
     cursor: pointer;
-
+    
 }
 
 .secondContainer a:hover{
     color: white;
-    transition: 0.2s ease;
+    transition: 0.4s ease;
     
 }
 
@@ -100,7 +100,7 @@
 
 .iconBack:hover {
     color: white;
-    transition: 0.2s ease;
+    transition: 0.4s ease;
 }
 
 @media screen and (max-width: 500px) {
@@ -171,13 +171,15 @@
         justify-content: center;
         align-items: center;
         z-index: 2;
-        padding-right: 5px;
+        padding-right: 7px;
+        padding-top: 7px;
         margin-left: auto;
         outline: none;
     }
 
     .buttonBurger:hover {
         color: rgb(141, 116, 250);
+        transition: 0.4s ease;
     }
 
     .secondContainer a {

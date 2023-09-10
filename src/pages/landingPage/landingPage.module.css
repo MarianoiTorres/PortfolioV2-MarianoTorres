@@ -45,7 +45,7 @@
 
 .containerInfo h1:hover {
     color: rgb(141, 116, 250);
-    transition: 0.2s ease;
+    transition: 0.4s ease;
 }
 
 .containerInfo p {
@@ -60,7 +60,7 @@
 
 .containerInfo p:hover {
     color: rgb(141, 116, 250);
-    transition: 0.2s ease;
+    transition: 0.4s ease;
 }
 
 .secondContainer {
@@ -89,6 +89,7 @@
 
 .next:hover .iconNext {
     color: rgb(141, 116, 250);
+    transition: 0.4s ease;
 }
 
 .containerButtonsLink {
@@ -116,11 +117,12 @@
     background-color: rgba(0, 0, 0, 0.5);
     font-weight: 600;
     color: rgb(141, 116, 250);
-    transition: 0.2s ease;
+    transition: 0.4s ease;
 }
 
 .iconDownload {
     width: 18px;
+    height: 18px;
 }
 
 @media screen and (max-width: 500px) {
