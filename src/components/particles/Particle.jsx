@@ -3,8 +3,6 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import style from './Particle.module.css'
 
-
-
 const Particle = () => {
 
   const particlesInit = useCallback(async engine => {
