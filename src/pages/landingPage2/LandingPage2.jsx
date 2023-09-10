@@ -5,7 +5,7 @@ import { useEffect, useState } from "react"
 import { FiArrowRight } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
 import { AiOutlineDownload } from "react-icons/ai";
-import cv from '../../assets/file/CV.pdf'
+import cv from '../../assets/file/CV-Mariano-Torres.pdf'
 
 
 const LandingPage2 = () => {
