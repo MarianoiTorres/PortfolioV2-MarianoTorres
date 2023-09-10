@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import Particle from "../../components/particles/particle";
+import Particle2 from "../../components/particle/Particle2";
 import style from './LandingPage2.module.css'
 import { useEffect, useState } from "react"
 import { FiArrowRight } from "react-icons/fi";
@@ -34,7 +34,7 @@ const LandingPage2 = () => {
             exit={{ opacity: 0 }}
             transition={{ type: "tween", ease: 'easeIn', duration: 0.5 }}
         >
-            <Particle />
+            <Particle2 />
             {visible && <div className={style.containerInfo}>
                 <motion.h1
                     initial={{ opacity: 0, x: -300 }}

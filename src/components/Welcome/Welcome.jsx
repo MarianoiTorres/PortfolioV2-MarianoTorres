@@ -1,11 +1,11 @@
 import { motion } from "framer-motion"
-import Particle from "../particles/particle"
+import Particle2 from "../particle/Particle2"
 import style from './Welcome.module.css'
 
 const Welcome = () => {
     return (
         <motion.div className={style.container} id="home">
-            <Particle />
+            <Particle2 />
             <motion.div className={style.containerTitle}>
                 <p className={style.html}>{"<html>"}</p>
                 <div className={style.body}>
