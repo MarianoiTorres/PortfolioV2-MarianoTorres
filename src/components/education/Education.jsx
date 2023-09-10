@@ -2,7 +2,6 @@ import style from './Education.module.css'
 import { motion, } from "framer-motion"
 import utn from '../../assets/img/utn.png'
 import henry from '../../assets/img/henry2.png'
-import Particle from '../particles/particle'
 
 const Education = () => {
 
