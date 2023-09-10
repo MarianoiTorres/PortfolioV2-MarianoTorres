@@ -91,7 +91,7 @@ const Projects = () => {
                     </motion.div>
                     <div className={style.containerImage} data-aos="fade-right">
                         <div className={style.linksDivReverse}>
-                            <a className={style.button} href='https://github.com/MarianoiTorres/PF-TheChocolateHub' target='_blank'>
+                            <a className={style.button} href='https://github.com/TomasMallar/ProyectoFinalHenry' target='_blank'>
                                 <AiFillGithub className={style.icon} />
                             </a>
                             <a className={style.button} href='https://www.linkedin.com/posts/mariano-torres-1b717b236_react-redux-nodejs-activity-7060976571414646784-GtMv?utm_source=share&utm_medium=member_desktop' target='_blank'>
