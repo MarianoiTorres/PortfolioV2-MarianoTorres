@@ -35,7 +35,7 @@ const About = () => {
                     <p className={style.titleInfo}><b>1. </b>¿Quien soy?</p>
                     <p>Soy un desarrollador Web Full Stack en constante crecimiento.
                         <br />
-                        Tengo 19 años y soy de Tucumán, Argentina. Desde niño, siempre estuve muy relacionado con la tecnología. En los últimos dos años, descubrí mi pasión por el desarrollo web y lo mucho que disfruto resolver los desafíos que se me presentan.
+                        Tengo 19 años, soy de Tucumán, Argentina. Desde niño, siempre estuve muy relacionado con la tecnología. En los últimos dos años, descubrí mi pasión por el desarrollo web y lo mucho que disfruto resolver los desafíos que se me presentan.
                     </p>
                 </div>
             </div>
