@@ -5,6 +5,7 @@ import { useEffect, useState } from "react"
 import { FiArrowRight } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
 import { AiOutlineDownload } from "react-icons/ai";
+import cv from '../../assets/file/CV.pdf'
 
 
 const LandingPage2 = () => {
@@ -80,7 +81,7 @@ const LandingPage2 = () => {
                     <a href="https://github.com/MarianoiTorres" target="_blank" className={style.buttonLink}>
                         GitHub
                     </a>
-                    <a href="../../assets/file/CV" download="CV - Mariano Torres.pdf" className={style.buttonLink}>
+                    <a href={cv} download="CV-Mariano Torres.pdf" type="application/pdf" className={style.buttonLink}>
                         CV
                         <AiOutlineDownload className={style.iconDownload}/>
                     </a>
