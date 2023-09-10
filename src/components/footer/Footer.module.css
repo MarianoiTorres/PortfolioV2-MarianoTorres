@@ -97,7 +97,8 @@
     }
 
     .copy {
-        margin: 10px;
+        margin-left: 10px;
+        padding-left: 5px;
     }
 
     .links {
