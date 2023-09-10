@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import Particle from '../../components/particles/particle'
-import style from './landingPage.module.css'
+import style from './LandingPage.module.css'
 import { useEffect, useState } from "react"
 import { FiArrowRight } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
