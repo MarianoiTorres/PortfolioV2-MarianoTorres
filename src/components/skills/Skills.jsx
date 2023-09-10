@@ -1,21 +1,6 @@
 import style from './Skills.module.css'
 import { motion, } from "framer-motion"
-import javascript from '../../assets/img/javascript.png'
-import node from '../../assets/img/node.png'
-import express from '../../assets/img/express.png'
-import sequelize from '../../assets/img/sequelize.png'
-import postgre from '../../assets/img/postgre.png'
-import react from '../../assets/img/react.png'
-import redux from '../../assets/img/redux.png'
-import angular from '../../assets/img/angular.png'
-import mongo from '../../assets/img/mongo.png'
-import css from '../../assets/img/css.png'
-import html from '../../assets/img/html.png'
-import typescript from '../../assets/img/typescript.png'
-import git from '../../assets/img/git.png'
-import bootstrap from '../../assets/img/bootstrap.png'
-import mysql from '../../assets/img/mysql.png'
-import ngrx from '../../assets/img/ngrx.png'
+
 import AOS from 'aos'
 import { useEffect, useState } from "react"
 
@@ -54,14 +39,14 @@ const Skills = () => {
                             setIsHovered(true);
                             setLanguageName('Javascript');
                         }}
-                            onMouseLeave={() => setIsHovered(false)} src={javascript} alt="Javascript" /> <motion.p
+                            onMouseLeave={() => setIsHovered(false)} src='https://res.cloudinary.com/djdqwkavb/image/upload/v1694376273/portfolio/javascript_oivdzr.png' alt="Javascript" /> <motion.p
                                 initial={{ opacity: 0 }}
                                 animate={isHovered ? { opacity: 1 } : { opacity: 0 }}
                                 transition={isHovered ? { ease: 'easeIn', duration: 0.3 } : null}
                             >{languageName === 'Javascript' && isHovered ? languageName : null}</motion.p>
                         </motion.li>
                         <motion.li data-aos="zoom-in"
-                        ><motion.img src={node} onMouseEnter={() => {
+                        ><motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1694376438/portfolio/node_n5hime.png' onMouseEnter={() => {
                             setIsHovered(true);
                             setLanguageName('Node');
                         }}
@@ -72,7 +57,7 @@ const Skills = () => {
                             >{languageName === 'Node' && isHovered ? languageName : null}</motion.p>
                         </motion.li>
                         <motion.li data-aos="zoom-in"
-                        ><motion.img src={express} onMouseEnter={() => {
+                        ><motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1694376486/portfolio/express_mgj843.png' onMouseEnter={() => {
                             setIsHovered(true);
                             setLanguageName('Express');
                         }}
@@ -83,7 +68,7 @@ const Skills = () => {
                             >{languageName === 'Express' && isHovered ? languageName : null}</motion.p>
                         </motion.li>
                         <motion.li data-aos="zoom-in"
-                        ><motion.img src={sequelize} onMouseEnter={() => {
+                        ><motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1694376463/portfolio/sequelize_qxyuwh.png' onMouseEnter={() => {
                             setIsHovered(true);
                             setLanguageName('Sequelize');
                         }}
@@ -94,7 +79,7 @@ const Skills = () => {
                             >{languageName === 'Sequelize' && isHovered ? languageName : null}</motion.p>
                         </motion.li>
                         <motion.li data-aos="zoom-in"
-                        ><motion.img src={postgre} onMouseEnter={() => {
+                        ><motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1694376563/portfolio/postgre_jxnzv7.png' onMouseEnter={() => {
                             setIsHovered(true);
                             setLanguageName('PostgreSQL');
                         }}
@@ -105,7 +90,7 @@ const Skills = () => {
                             >{languageName === 'PostgreSQL' && isHovered ? languageName : null}</motion.p>
                         </motion.li>
                         <motion.li data-aos="zoom-in"
-                        ><motion.img src={react} onMouseEnter={() => {
+                        ><motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1694376570/portfolio/react_ni0xyw.png' onMouseEnter={() => {
                             setIsHovered(true);
                             setLanguageName('React');
                         }}
@@ -116,7 +101,7 @@ const Skills = () => {
                             >{languageName === 'React' && isHovered ? languageName : null}</motion.p>
                         </motion.li>
                         <motion.li data-aos="zoom-in"
-                        ><motion.img src={redux} onMouseEnter={() => {
+                        ><motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1694376585/portfolio/redux_gphyac.png' onMouseEnter={() => {
                             setIsHovered(true);
                             setLanguageName('Redux');
                         }}
@@ -127,7 +112,7 @@ const Skills = () => {
                             >{languageName === 'Redux' && isHovered ? languageName : null}</motion.p>
                         </motion.li>
                         <motion.li data-aos="zoom-in"
-                        ><motion.img src={angular} onMouseEnter={() => {
+                        ><motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1694376548/portfolio/angular_qlybre.png' onMouseEnter={() => {
                             setIsHovered(true);
                             setLanguageName('Angular');
                         }}
@@ -138,7 +123,7 @@ const Skills = () => {
                             >{languageName === 'Angular' && isHovered ? languageName : null}</motion.p>
                         </motion.li>
                         <motion.li data-aos="zoom-in"
-                        ><motion.img src={ngrx} onMouseEnter={() => {
+                        ><motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1694376608/portfolio/ngrx_nekolf.png' onMouseEnter={() => {
                             setIsHovered(true);
                             setLanguageName('NgRx');
                         }}
@@ -149,7 +134,7 @@ const Skills = () => {
                             >{languageName === 'NgRx' && isHovered ? languageName : null}</motion.p>
                         </motion.li>
                         <motion.li data-aos="zoom-in"
-                        ><motion.img src={mongo} onMouseEnter={() => {
+                        ><motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1694376591/portfolio/mongo_cacgk2.png' onMouseEnter={() => {
                             setIsHovered(true);
                             setLanguageName('MongoDB');
                         }}
@@ -160,7 +145,7 @@ const Skills = () => {
                             >{languageName === 'MongoDB' && isHovered ? languageName : null}</motion.p>
                         </motion.li>
                         <motion.li data-aos="zoom-in"
-                        ><motion.img src={css} onMouseEnter={() => {
+                        ><motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1694376599/portfolio/css_mha7qd.png' onMouseEnter={() => {
                             setIsHovered(true);
                             setLanguageName('CSS');
                         }}
@@ -171,7 +156,7 @@ const Skills = () => {
                             >{languageName === 'CSS' && isHovered ? languageName : null}</motion.p>
                         </motion.li>
                         <motion.li data-aos="zoom-in"
-                        ><motion.img src={html} onMouseEnter={() => {
+                        ><motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1694376596/portfolio/html_wj0owy.png' onMouseEnter={() => {
                             setIsHovered(true);
                             setLanguageName('HTML');
                         }}
@@ -182,7 +167,7 @@ const Skills = () => {
                             >{languageName === 'HTML' && isHovered ? languageName : null}</motion.p>
                         </motion.li>
                         <motion.li data-aos="zoom-in"
-                        ><motion.img src={typescript} onMouseEnter={() => {
+                        ><motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1694376593/portfolio/typescript_ef9jqk.png' onMouseEnter={() => {
                             setIsHovered(true);
                             setLanguageName('Typescript');
                         }}
@@ -193,7 +178,7 @@ const Skills = () => {
                             >{languageName === 'Typescript' && isHovered ? languageName : null}</motion.p>
                         </motion.li>
                         <motion.li data-aos="zoom-in"
-                        ><motion.img src={git} onMouseEnter={() => {
+                        ><motion.img src='https://res.cloudinary.com/djdqwkavb/image/upload/v1694376602/portfolio/git_lmlqgk.png' onMouseEnter={() => {
                             setIsHovered(true);
                             setLanguageName('Git');
                         }}
@@ -208,7 +193,7 @@ const Skills = () => {
                             setIsHovered(true);
                             setLanguageName('Bootstrap');
                         }}
-                            onMouseLeave={() => setIsHovered(false)} src={bootstrap} alt="Bootstrap" /> <motion.p
+                            onMouseLeave={() => setIsHovered(false)} src='https://res.cloudinary.com/djdqwkavb/image/upload/v1694376606/portfolio/bootstrap_lwmx3l.png' alt="Bootstrap" /> <motion.p
                                 initial={{ opacity: 0 }}
                                 animate={isHovered ? { opacity: 1 } : { opacity: 0 }}
                                 transition={isHovered ? { ease: 'easeIn', duration: 0.3 } : null}
@@ -219,7 +204,7 @@ const Skills = () => {
                             setIsHovered(true);
                             setLanguageName('MySQL');
                         }}
-                            onMouseLeave={() => setIsHovered(false)} src={mysql} alt="MySQL" /> <motion.p
+                            onMouseLeave={() => setIsHovered(false)} src='https://res.cloudinary.com/djdqwkavb/image/upload/v1694376604/portfolio/mysql_sgdrht.png' alt="MySQL" /> <motion.p
                                 initial={{ opacity: 0 }}
                                 animate={isHovered ? { opacity: 1 } : { opacity: 0 }}
                                 transition={isHovered ? { ease: 'easeIn', duration: 0.3 } : null}

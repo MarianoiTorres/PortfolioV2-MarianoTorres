@@ -34,7 +34,7 @@ const Welcome = () => {
             transition={{duration: 7, repeat: Infinity}}
             style={{ transformOrigin: "center center", scale: 1 }}
             >
-                <img src="https://www.motionspace.cz/wp-content/uploads/2019/03/ilustracka.png" alt="" />
+                <img src="https://www.motionspace.cz/wp-content/uploads/2019/03/ilustracka.png" alt="" className={style.perfil}/>
             </motion.div>
             </div>
 
