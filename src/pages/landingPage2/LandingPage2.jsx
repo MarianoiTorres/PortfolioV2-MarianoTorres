@@ -81,7 +81,7 @@ const LandingPage2 = () => {
                     <a href="https://github.com/MarianoiTorres" target="_blank" className={style.buttonLink}>
                         GitHub
                     </a>
-                    <a href={cv} download="CV-Mariano Torres.pdf" type="application/pdf" className={style.buttonLink}>
+                    <a href={cv} download="CV-Mariano-Torres.pdf" type="application/pdf" className={style.buttonLink}>
                         CV
                         <AiOutlineDownload className={style.iconDownload}/>
                     </a>
