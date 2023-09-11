@@ -18,7 +18,7 @@ const Nav = () => {
     }
 
     const handleResize = () => {
-        setIsMobile(window.innerWidth < 800);
+        setIsMobile(window.innerWidth < 768.5);
     };
 
     // Suscribirse al evento de cambio de tamaño de la ventana
