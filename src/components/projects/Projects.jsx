@@ -193,7 +193,7 @@ const Projects = () => {
                             <a className={style.button} href='https://github.com/MarianoiTorres/PortfolioV2-MarianoTorres' target='_blank'>
                                 <AiFillGithub className={style.icon} />
                             </a>
-                            <a className={style.button} href='' target='_blank'>
+                            <a className={style.button} href='https://www.linkedin.com/posts/mariano-torres-1b717b236_portfolio-developer-activity-7107028608522579969-QQJ3?utm_source=share&utm_medium=member_desktop' target='_blank'>
                                 <AiFillLinkedin className={style.icon} />
                             </a>
                             <a className={style.button} href='https://portfolio-marianotorres.vercel.app/' target='_blank'>
