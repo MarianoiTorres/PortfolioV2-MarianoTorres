@@ -20,7 +20,7 @@ const Particle2 = () => {
         {
           "fullScreen": {
             "enable": true,
-            "zIndex": 1
+            "zIndex": 0
           },
           "particles": {
             "number": {

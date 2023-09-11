@@ -35,7 +35,7 @@ const LandingPage2 = () => {
             exit={{ opacity: 0 }}
             transition={{ type: "tween", ease: 'easeIn', duration: 0.5 }}
         >
-            <Particle2 />
+           
             {visible && <div className={style.containerInfo}>
                 <motion.h1
                     initial={{ opacity: 0, x: -300 }}

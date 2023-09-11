@@ -125,6 +125,7 @@ form textarea {
     width: 350px;
     max-width: 350px;
     height: 70px;
+    max-height: 110px;
     border: none;
     box-sizing: border-box;
     padding: 5px;
