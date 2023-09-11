@@ -278,9 +278,9 @@
     height: 80px;
     width: 55%;
     background: linear-gradient(
-        195deg,
+        115deg,
         rgba(255,255,255,0.1),
-        rgba(255,255,255,0.1)
+        rgba(10, 10, 10, 0.3)
     );
     backdrop-filter: blur(151px);
     -webkit-backdrop-filter: blur(151px);
@@ -298,8 +298,8 @@
     height: 80px;
     width: 55%;
     background: linear-gradient(
-        195deg,
-        rgba(255,255,255,0.1),
+        115deg,
+        rgba(10, 10, 10, 0.3),
         rgba(255,255,255,0.1)
     );
     backdrop-filter: blur(151px);
