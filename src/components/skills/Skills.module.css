@@ -125,7 +125,7 @@ li p {
     text-shadow: -2px -2px 2px #5d4bc2;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
 
     .container {
         gap: 20px;

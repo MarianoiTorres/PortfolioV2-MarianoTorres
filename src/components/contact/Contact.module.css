@@ -178,7 +178,7 @@ form textarea {
     box-shadow: 0 0 3px rgba(121, 97, 255, 0.7), 0 0 6px rgba(121, 97, 255, 0.7), 0 0 10px rgba(121, 97, 255, 0.7);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
 
  
     .secondContainerForm {

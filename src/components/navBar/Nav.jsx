@@ -6,8 +6,6 @@ import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-scroll'
 import { NavLink } from 'react-router-dom'
 import { GiHamburgerMenu } from 'react-icons/gi'
-import { AiOutlineClose } from 'react-icons/ai'
-
 
 const Nav = () => {
 
@@ -20,7 +18,7 @@ const Nav = () => {
     }
 
     const handleResize = () => {
-        setIsMobile(window.innerWidth < 650);
+        setIsMobile(window.innerWidth < 800);
     };
 
     // Suscribirse al evento de cambio de tamaño de la ventana
@@ -39,8 +37,9 @@ const Nav = () => {
     const animate = isMobile && !openMenu
         ? { y: -500 }  
         : { y: 0 };
+
     return (
-        <div className={style.containerNav}>
+        <nav className={style.containerNav}>
             {
                 isMobile && <GiHamburgerMenu className={style.buttonBurger} onClick={openMenuHandler} />
             }
@@ -112,7 +111,7 @@ const Nav = () => {
 
                 </motion.div>
             
-        </div>
+        </nav>
     )
 }
 

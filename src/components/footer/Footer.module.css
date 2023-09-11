@@ -89,7 +89,7 @@
     transition: 0.2s ease;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
 
     .footer {
         gap: 0;
@@ -102,6 +102,35 @@
     }
 
     .links {
+        flex-direction: row;
+        align-items: top;
+        height: 100%;
+    }
+
+
+    .footerNavigate a {
+        width: fit-content;
+
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .footer {
+        gap: 0;
+        height: fit-content;
+    }
+
+    .copy {
+        margin-left: 10px;
+        width: 80%;
+        padding-left: 5px;
+    }
+
+    .links {
+        width: 20%;
         margin: 0;
         flex-direction: column;
         gap: 3px;

@@ -314,7 +314,7 @@
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
     .title {
     
     }
@@ -352,7 +352,13 @@
 
     .containerImage {
         width: 100%;
-        height: 235px;
+        height: fit-content;
+        max-height: 255px;
+    }
+
+    .imageOrGif img {
+        height: fit-content;
+        max-height: 255px;
     }
 
    

@@ -71,15 +71,36 @@ h2 {
 }
 
 
+@media screen and (max-width: 768px) {
+
+    .title {
+        width: fit-content;
+        font-size: 15px;
+    }
+
+    .containerTitle {
+        width: 55%;
+        padding-left: 4%;
+    }
+
+    .containerImage img{
+        width: 250px;
+    }
+
+}
+
 @media screen and (max-width: 500px) {
+    .containerImage {
+        display: none;
+    }
 
     .containerTitle {
         width: 100%;
         padding-left: 4%;
     }
 
-    .containerImage {
-        display: none;
+    .title {
+        font-size: 20px;
     }
 
 }
