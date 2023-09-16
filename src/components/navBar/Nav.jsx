@@ -101,12 +101,12 @@ const Nav = () => {
                             }
                         }
                     >
-                        <Link to='home' spy={true} smooth={true}>Inicio</Link>
-                        <Link to='about' spy={true} smooth={true}>Sobre Mi</Link>
-                        <Link to='skills' spy={true} smooth={true}>Skills</Link>
-                        <Link to='projects' spy={true} smooth={true}>Proyectos</Link>
-                        <Link to='education' spy={true} smooth={true}>Estudios</Link>
-                        <Link to='contact' spy={true} smooth={true}>Contacto</Link>
+                        <Link to='home' spy={true} smooth={true} onClick={() => setOpenMenu(false)}>Inicio</Link>
+                        <Link to='about' spy={true} smooth={true} onClick={() => setOpenMenu(false)}>Sobre Mi</Link>
+                        <Link to='skills' spy={true} smooth={true} onClick={() => setOpenMenu(false)}>Skills</Link>
+                        <Link to='projects' spy={true} smooth={true} onClick={() => setOpenMenu(false)}>Proyectos</Link>
+                        <Link to='education' spy={true} smooth={true} onClick={() => setOpenMenu(false)}>Estudios</Link>
+                        <Link to='contact' spy={true} smooth={true} onClick={() => setOpenMenu(false)}>Contacto</Link>
                     </motion.div>
 
                 </motion.div>
